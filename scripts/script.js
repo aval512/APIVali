@@ -2,41 +2,26 @@ $(document).ready(function() {
 
 ///////////////////////////////////
 // XMLHttpRequest
-// const Url='https://api.{environment}.validis.com/v1/engagements/{engagementId}/connectors/{connectorName}/upload';
-// $('.btn').click(function() {
-// 	$.ajax({
-// 		url: Url,
-// 		type: "GET",
-// 		success: function(result) {
-// 			console.log(result)
-// 		},
-// 		error: function(error) {
-// 			console.log(`Error ${error}`)
-// 		}
-// 	})
-// });
+
+
+const Url='https://api.{environment}.validis.com/v1/engagements/{engagementId}/connectors/{connectorName}/upload';
+$('.btn').click(function() {
+	$.ajax({
+		url: Url,
+		type: "GET",
+		success: function(result) {
+			console.log(result)
+		},
+		error: function(error) {
+			console.log(`Error ${error}`)
+		}
+	})
+});
 
 // POST
 
-// const Url='';
-
-// const Data={
-// 	name: "quickbooks",
-// 	id: 2
-// };
-
-// $('.btn').click(function(){
-// 	$getJSON(Url, function(result) {
-// 		console.log(result)
-// 	});
-// });
-
 // Fetch
-// const Url='';
 
-// fetch(Url)
-// .then(data=>{return data.json()})
-// .then(res=>{console.log(res)})
 
 ///////////////////////////////////
 
@@ -83,3 +68,6 @@ $(document).ready(function() {
 		$(this).parent().toggleClass("check")
 	})
 });
+
+
+///////
